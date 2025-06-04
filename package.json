@@ -20,7 +20,7 @@
 }
 {
   "name": "interactive-pookie-question---pink-dream",
-  ...
+
   "homepage": "https://<Modeyka-GitHub>.github.io/<Mypookie>",
   "scripts": {
     "dev": "vite",
@@ -28,5 +28,5 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
-  ...
+  
 }
