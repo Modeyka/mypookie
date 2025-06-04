@@ -1,6 +1,7 @@
 {
   "name": "mypookie",
   "version": "1.0.0",
+ "homepage": "https://modeyka.github.io/mypookie/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
