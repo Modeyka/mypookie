@@ -19,3 +19,6 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
+git add .
+git commit -m "Fix vite config for GitHub Pages"
+git push
