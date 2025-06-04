@@ -15,3 +15,7 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+export default defineConfig({
+  base: '/mypookie/', 
+  ...
+})
