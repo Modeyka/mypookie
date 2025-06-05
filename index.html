@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Pookie Fun</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pookie Adventure</title>
+    <!-- استخدام CDN مباشر لـ Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/index.css">
-  </head>
-  <body class="bg-pink-900 font-['Press_Start_2P']">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- خط Press Start 2P -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* أنيميشن الرقص */
+        @keyframes kittyDance {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-3px) rotate(-4deg) scaleX(-1); }
+            50% { transform: translateY(0) rotate(0deg) scaleX(-1); }
+            75% { transform: translateY(-3px) rotate(4deg) scaleX(1); }
+        }
+        /* أنيميشن القلب */
+        @keyframes heartFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+    </style>
+</head>
+<body class="bg-pink-900 font-['Press_Start_2P'] min-h-screen flex items-center justify-center">
+    <div id="app" class="text-center p-8">
+        <!-- صورة Pookie -->
+        <img src="assets/images/pookie.png" alt="Pookie" class="w-64 h-64 mx-auto animate-kittyDance pixel-art">
+        <h1 class="text-white text-2xl my-4">Welcome to Pookie World!</h1>
+        <!-- زر التفاعل -->
+        <button id="action-btn" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-all">
+            Click Me!
+        </button>
+    </div>
+
+    <!-- ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
